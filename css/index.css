@@ -1,0 +1,256 @@
+/* RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Orbitron", sans-serif;
+}
+
+/* BODY */
+
+body {
+  background-image: url("https://images6.alphacoders.com/116/thumb-1920-1162645.png");
+
+  background-size: cover;
+  background-position: center;
+
+  min-height: 100vh;
+}
+
+/* NAVBAR */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 14px 40px;
+
+  background: rgba(2, 2, 3, 0.8);
+
+  backdrop-filter: blur(10px);
+
+  border-bottom: 1px solid rgba(0, 255, 136, 0.4);
+
+  box-shadow: 0 5px 25px rgba(0, 255, 136, 0.15);
+}
+
+/* LOGO */
+
+.logo {
+  color: #00ff88;
+
+  font-weight: 600;
+
+  font-size: 20px;
+
+  letter-spacing: 2px;
+}
+
+/* NAV LINKS */
+
+.nav-right a {
+  color: white;
+
+  margin-left: 20px;
+
+  text-decoration: none;
+
+  transition: all 0.25s ease;
+
+  padding: 6px 12px;
+
+  border-radius: 6px;
+}
+
+.nav-right a:hover {
+  color: #00ff88;
+
+  background: rgba(0, 255, 136, 0.08);
+
+  text-shadow: 0 0 10px #00ff88;
+}
+
+/* SEARCH BOX */
+
+.search-box {
+  background: #0f1a33;
+
+  border: 1px solid rgba(0, 255, 136, 0.5);
+
+  padding: 7px 12px;
+
+  color: white;
+
+  width: 220px;
+
+  border-radius: 8px;
+
+  outline: none;
+
+  transition: 0.2s;
+}
+
+.search-box:focus {
+  border-color: #00ff88;
+
+  box-shadow: 0 0 10px rgba(0, 255, 136, 0.4);
+}
+
+/* CONTENT WRAPPER */
+
+.content-wrapper {
+  width: 85%;
+
+  margin: 60px auto;
+
+  padding: 40px;
+
+  background: rgba(2, 2, 3, 0.85);
+
+  border: 1px solid rgba(0, 255, 136, 0.5);
+
+  border-radius: 14px;
+
+  backdrop-filter: blur(6px);
+
+  box-shadow: 0 10px 40px rgba(0, 255, 136, 0.15);
+}
+
+/* PAGE TITLE */
+
+.page-title {
+  text-align: center;
+
+  color: #00ff88;
+
+  margin-bottom: 35px;
+
+  letter-spacing: 2px;
+
+  font-size: 28px;
+}
+
+/* GRID */
+
+.alien-grid {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+
+  gap: 28px;
+}
+
+/* CARD */
+
+.alien-card {
+  text-decoration: none;
+
+  background: rgba(0, 0, 0, 0.9);
+
+  padding: 16px;
+
+  text-align: center;
+
+  border-radius: 12px;
+
+  border: 1px solid rgba(0, 255, 136, 0.4);
+
+  transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* CARD HOVER */
+
+.alien-card:hover {
+  transform: translateY(-8px) scale(1.04);
+
+  box-shadow: 0 15px 35px rgba(0, 255, 136, 0.35);
+
+  border-color: #00ff88;
+}
+
+/* IMAGE */
+
+.alien-img {
+  width: 100%;
+
+  height: 150px;
+
+  object-fit: cover;
+
+  background: #111;
+
+  border-radius: 10px;
+
+  margin-bottom: 12px;
+}
+
+/* ALIEN NAME */
+
+.alien-name {
+  color: #00ff88;
+
+  font-size: 15px;
+
+  letter-spacing: 1px;
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00ff88;
+  border-radius: 10px;
+}
+body {
+  animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.alien-card:hover {
+  box-shadow:
+    0 0 15px #00ff88,
+    0 10px 35px rgba(0, 255, 136, 0.35);
+}
+/* NAV LEFT */
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* OMNITRIX LOGO */
+
+.omnitrix-img {
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+
+  transition:
+    transform 0.5s ease,
+    filter 0.4s ease;
+
+  /* aura nhẹ */
+  filter: drop-shadow(0 0 4px #00ff88) drop-shadow(0 0 8px #00ff88);
+}
+
+/* HOVER EFFECT */
+
+.omnitrix-img:hover {
+  /* xoay ngang 180 */
+  transform: rotateY(180deg);
+
+  /* aura mạnh hơn */
+  filter: drop-shadow(0 0 8px #00ff88) drop-shadow(0 0 16px #00ff88)
+    drop-shadow(0 0 28px #00ff88);
+}

@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Orbitron", sans-serif;
+}
+
+body {
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: radial-gradient(circle, #00ff8830, transparent), #050a14;
+
+  color: white;
+}
+
+/* CONTAINER */
+
+.start-container {
+  text-align: center;
+}
+
+/* TITLE */
+
+.title {
+  font-size: 48px;
+  margin-top: 20px;
+
+  color: #00ff88;
+
+  letter-spacing: 2px;
+}
+
+.subtitle {
+  opacity: 0.7;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+/* font giống start */
+
+body {
+  font-family: "Orbitron", sans-serif;
+  color: white;
+}
+
+/* LAYOUT */
+
+.author-container {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 80px;
+
+  gap: 60px;
+}
+
+/* PHẦN THÔNG TIN */
+
+.author-info {
+  flex: 1;
+
+  max-width: 600px;
+}
+
+.author-title {
+  font-size: 42px;
+
+  color: #00ff88;
+
+  margin-bottom: 40px;
+
+  letter-spacing: 2px;
+}
+
+/* TỪNG DÒNG INFO */
+
+.info-item {
+  margin-bottom: 25px;
+
+  border-bottom: 1px solid rgba(0, 255, 136, 0.3);
+
+  padding-bottom: 8px;
+}
+
+.info-item span {
+  color: #00ff88;
+
+  font-weight: 600;
+
+  margin-right: 10px;
+}
+
+.info-item p {
+  display: inline;
+
+  opacity: 0.85;
+}
+
+/* AVATAR */
+
+.author-avatar-container {
+  flex: 1;
+
+  display: flex;
+
+  justify-content: center;
+}
+
+/* ẢNH AVATAR */
+
+.author-avatar {
+  width: 260px;
+  height: 260px;
+
+  border-radius: 50%;
+
+  object-fit: cover;
+
+  /* aura giống Omnitrix */
+
+  filter: drop-shadow(0 0 20px #00ff88);
+
+  transition: 0.4s;
+}
+
+/* HOVER AVATAR */
+
+.author-avatar:hover {
+  filter: drop-shadow(0 0 30px #00ff88) drop-shadow(0 0 60px #39ff14)
+    drop-shadow(0 0 100px #00ff88);
+
+  transform: scale(1.05);
+}
+
+/* PULSE ANIMATION */
+
+@keyframes omnitrixPulse {
+  0% {
+    filter: drop-shadow(0 0 15px #00ff88);
+  }
+
+  50% {
+    filter: drop-shadow(0 0 30px #00ff88);
+  }
+
+  100% {
+    filter: drop-shadow(0 0 15px #00ff88);
+  }
+}
+
+.author-avatar {
+  animation: omnitrixPulse 3s infinite;
+}
+.author-title::after {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 2px;
+  background: #00ff88;
+  margin-top: 10px;
+  box-shadow: 0 0 10px #00ff88;
+}
+/* BACK BUTTON */
+
+.back-btn {
+  position: fixed;
+
+  top: 30px;
+  left: 30px;
+
+  color: #00ff88;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+
+  z-index: 1000;
+
+  filter: drop-shadow(0 0 8px #00ff88);
+}
+
+/* HOVER AURA */
+
+.back-btn:hover {
+  filter: drop-shadow(0 0 20px #00ff88) drop-shadow(0 0 40px #39ff14)
+    drop-shadow(0 0 80px #00ff88);
+
+  transform: scale(1.15);
+}
+@keyframes arrowPulse {
+  0% {
+    filter: drop-shadow(0 0 8px #00ff88);
+  }
+
+  50% {
+    filter: drop-shadow(0 0 18px #00ff88);
+  }
+
+  100% {
+    filter: drop-shadow(0 0 8px #00ff88);
+  }
+}
+
+.back-btn {
+  animation: arrowPulse 3s infinite;
+}
