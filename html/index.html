@@ -35,19 +35,15 @@
       <div class="nav-center">
         <input type="text" placeholder="Search Alien..." class="search-box" />
       </div>
-
-      <div class="nav-right">
-        <a href="#">Home</a>
-        <a href="#">Aliens</a>
-        <a href="author.html">Author</a>
-      </div>
     </nav>
 
     <!-- MAIN CONTENT -->
 
     <div class="content-wrapper">
       <h2 class="page-title">Alien Database</h2>
-
+      <button id="createAlienBtn" class="btn btn-success mb-3">
+        Create Alien
+      </button>
       <div class="alien-grid">
         <!-- ALIEN CARD 1 -->
 
@@ -134,6 +130,35 @@
           <p class="alien-name">Ghostfreak</p>
         </a>
       </div>
+      <div id="alienFormContainer" style="display: none">
+        <h3>Create Alien</h3>
+
+        <input id="name" placeholder="Alien Name" class="form-control mb-2" />
+
+        <input id="species" placeholder="Species" class="form-control mb-2" />
+
+        <input
+          id="abilities"
+          placeholder="Abilities"
+          class="form-control mb-2"
+        />
+
+        <input id="weakness" placeholder="Weakness" class="form-control mb-2" />
+
+        <textarea
+          id="description"
+          placeholder="Description"
+          class="form-control mb-2"
+        ></textarea>
+
+        <label>Card Image</label>
+        <input type="text" id="cardImage" />
+
+        <label>Detail Image</label>
+        <input type="text" id="detailImage" />
+
+        <button id="saveAlien" class="btn btn-primary mt-2">Save Alien</button>
+      </div>
     </div>
 
     <script
@@ -147,5 +172,6 @@
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"
     ></script>
+    <script type="module" src="/js/index.js"></script>
   </body>
 </html>
