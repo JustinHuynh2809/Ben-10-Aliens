@@ -1,10 +1,55 @@
-<h1 id="name"></h1>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Alien Info</title>
 
-<img id="image" />
+    <link rel="stylesheet" href="/Ben-10-Aliens/css/alien.css" />
 
-<p id="species"></p>
-<p id="abilities"></p>
-<p id="weakness"></p>
-<p id="description"></p>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<script type="module" src="/js/alien.js"></script>
+  <body>
+    <header class="top-bar">
+      <a href="index.html" class="back-button">← Back</a>
+
+      <img
+        src="/Ben-10-Aliens/img/normal-img/onimitrixbgk.png"
+        class="omnitrix"
+      />
+    </header>
+
+    <main class="alien-container">
+      <h1 id="name"></h1>
+
+      <img id="image" />
+
+      <section class="info">
+        <div class="info-row">
+          <span>Species (Loài)</span>
+          <p id="species"></p>
+        </div>
+
+        <div class="info-row">
+          <span>Abilities (Khả năng)</span>
+          <p id="abilities"></p>
+        </div>
+
+        <div class="info-row">
+          <span>Weakness (Điểm yếu)</span>
+          <p id="weakness"></p>
+        </div>
+
+        <div class="info-row">
+          <span>Description (Mô tả)</span>
+          <p id="description"></p>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="/Ben-10-Aliens/js/alien.js"></script>
+  </body>
+</html>
